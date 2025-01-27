@@ -627,14 +627,13 @@ def main():
 
 
 
-    # TODO GET SCRAPED ALL THE MONTHS FROM CALENDAR
-    # for i, (month, url) in enumerate(sem1.items(), start=1):
-    #     print(''*5)
-    #     extract_events_by_month(url, cookie_data)
-    #     print(f"{i}: {month} extracted")
+    for i, (month, url) in enumerate(sem1.items(), start=1):
+        print(''*5)
+        extract_events_by_month(url, cookie_data)
+        print(f"{i}: {month} extracted")
 
-    # extract_all_links(cookie_data) 
-    # solve_all_pdfs(cookie_data)
+    extract_all_links(cookie_data) 
+    solve_all_pdfs(cookie_data)
 
     # solve_pdf("https://moodle2.e-wsb.pl/pluginfile.php/11663623/mod_assign/introattachment/0/elearning5.pdf", cookie_data)
 
@@ -644,7 +643,7 @@ def main():
     
     # print(user_id)
     # upload_pdf(a, b, cookie_data)
-    # upload_all_pdfs(cookie_data)
+    upload_all_pdfs(cookie_data)
     # remove_pdf(a)
     remove_all_pdfs(cookie_data)
 
